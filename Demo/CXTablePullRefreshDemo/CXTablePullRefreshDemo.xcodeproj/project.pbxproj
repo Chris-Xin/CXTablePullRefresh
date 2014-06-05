@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40A17D67193F5FA300765366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A17D66193F5FA300765366 /* Foundation.framework */; };
+		40A17D69193F5FA300765366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A17D68193F5FA300765366 /* CoreGraphics.framework */; };
+		40A17D6B193F5FA300765366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A17D6A193F5FA300765366 /* UIKit.framework */; };
+		40A17D71193F5FA300765366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40A17D6F193F5FA300765366 /* InfoPlist.strings */; };
+		40A17D73193F5FA300765366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A17D72193F5FA300765366 /* main.m */; };
+		40A17D77193F5FA300765366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A17D76193F5FA300765366 /* AppDelegate.m */; };
+		40A17D79193F5FA300765366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A17D78193F5FA300765366 /* Images.xcassets */; };
+		40A17D9B193F602000765366 /* CXTablePullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A17D9A193F602000765366 /* CXTablePullRefresh.m */; };
+		40A17D9E193F604A00765366 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A17D9D193F604A00765366 /* RootViewController.m */; };
+		40A17DA2193F64EE00765366 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A17DA0193F64EE00765366 /* grayArrow.png */; };
+		40A17DA3193F64EE00765366 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A17DA1193F64EE00765366 /* grayArrow@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40A17D63193F5FA300765366 /* CXTablePullRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXTablePullRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A17D66193F5FA300765366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40A17D68193F5FA300765366 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40A17D6A193F5FA300765366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40A17D6E193F5FA300765366 /* CXTablePullRefreshDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CXTablePullRefreshDemo-Info.plist"; sourceTree = "<group>"; };
+		40A17D70193F5FA300765366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40A17D72193F5FA300765366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40A17D74193F5FA300765366 /* CXTablePullRefreshDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CXTablePullRefreshDemo-Prefix.pch"; sourceTree = "<group>"; };
+		40A17D75193F5FA300765366 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40A17D76193F5FA300765366 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40A17D78193F5FA300765366 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40A17D7F193F5FA400765366 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		40A17D87193F5FA400765366 /* CXTablePullRefreshDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CXTablePullRefreshDemoTests-Info.plist"; sourceTree = "<group>"; };
+		40A17D89193F5FA400765366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40A17D8B193F5FA400765366 /* CXTablePullRefreshDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXTablePullRefreshDemoTests.m; sourceTree = "<group>"; };
+		40A17D99193F602000765366 /* CXTablePullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTablePullRefresh.h; sourceTree = "<group>"; };
+		40A17D9A193F602000765366 /* CXTablePullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXTablePullRefresh.m; sourceTree = "<group>"; };
+		40A17D9C193F604A00765366 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		40A17D9D193F604A00765366 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		40A17DA0193F64EE00765366 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		40A17DA1193F64EE00765366 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A17D60193F5FA300765366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A17D69193F5FA300765366 /* CoreGraphics.framework in Frameworks */,
+				40A17D6B193F5FA300765366 /* UIKit.framework in Frameworks */,
+				40A17D67193F5FA300765366 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A17D5A193F5FA300765366 = {
+			isa = PBXGroup;
+			children = (
+				40A17D6C193F5FA300765366 /* CXTablePullRefreshDemo */,
+				40A17D85193F5FA400765366 /* CXTablePullRefreshDemoTests */,
+				40A17D65193F5FA300765366 /* Frameworks */,
+				40A17D64193F5FA300765366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40A17D64193F5FA300765366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D63193F5FA300765366 /* CXTablePullRefreshDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A17D65193F5FA300765366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D66193F5FA300765366 /* Foundation.framework */,
+				40A17D68193F5FA300765366 /* CoreGraphics.framework */,
+				40A17D6A193F5FA300765366 /* UIKit.framework */,
+				40A17D7F193F5FA400765366 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40A17D6C193F5FA300765366 /* CXTablePullRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D75193F5FA300765366 /* AppDelegate.h */,
+				40A17D76193F5FA300765366 /* AppDelegate.m */,
+				40A17D9C193F604A00765366 /* RootViewController.h */,
+				40A17D9D193F604A00765366 /* RootViewController.m */,
+				40A17D78193F5FA300765366 /* Images.xcassets */,
+				40A17D95193F5FD600765366 /* CXTablePullRefresh */,
+				40A17D6D193F5FA300765366 /* Supporting Files */,
+			);
+			path = CXTablePullRefreshDemo;
+			sourceTree = "<group>";
+		};
+		40A17D6D193F5FA300765366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D6E193F5FA300765366 /* CXTablePullRefreshDemo-Info.plist */,
+				40A17D6F193F5FA300765366 /* InfoPlist.strings */,
+				40A17D72193F5FA300765366 /* main.m */,
+				40A17D74193F5FA300765366 /* CXTablePullRefreshDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40A17D85193F5FA400765366 /* CXTablePullRefreshDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D8B193F5FA400765366 /* CXTablePullRefreshDemoTests.m */,
+				40A17D86193F5FA400765366 /* Supporting Files */,
+			);
+			path = CXTablePullRefreshDemoTests;
+			sourceTree = "<group>";
+		};
+		40A17D86193F5FA400765366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D87193F5FA400765366 /* CXTablePullRefreshDemoTests-Info.plist */,
+				40A17D88193F5FA400765366 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40A17D95193F5FD600765366 /* CXTablePullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				40A17D9F193F64EE00765366 /* Resource */,
+				40A17D99193F602000765366 /* CXTablePullRefresh.h */,
+				40A17D9A193F602000765366 /* CXTablePullRefresh.m */,
+			);
+			path = CXTablePullRefresh;
+			sourceTree = "<group>";
+		};
+		40A17D9F193F64EE00765366 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				40A17DA0193F64EE00765366 /* grayArrow.png */,
+				40A17DA1193F64EE00765366 /* grayArrow@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40A17D62193F5FA300765366 /* CXTablePullRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A17D8F193F5FA400765366 /* Build configuration list for PBXNativeTarget "CXTablePullRefreshDemo" */;
+			buildPhases = (
+				40A17D5F193F5FA300765366 /* Sources */,
+				40A17D60193F5FA300765366 /* Frameworks */,
+				40A17D61193F5FA300765366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CXTablePullRefreshDemo;
+			productName = CXTablePullRefreshDemo;
+			productReference = 40A17D63193F5FA300765366 /* CXTablePullRefreshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40A17D5B193F5FA300765366 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Chris.Xin;
+			};
+			buildConfigurationList = 40A17D5E193F5FA300765366 /* Build configuration list for PBXProject "CXTablePullRefreshDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40A17D5A193F5FA300765366;
+			productRefGroup = 40A17D64193F5FA300765366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A17D62193F5FA300765366 /* CXTablePullRefreshDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40A17D61193F5FA300765366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A17DA2193F64EE00765366 /* grayArrow.png in Resources */,
+				40A17D71193F5FA300765366 /* InfoPlist.strings in Resources */,
+				40A17D79193F5FA300765366 /* Images.xcassets in Resources */,
+				40A17DA3193F64EE00765366 /* grayArrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40A17D5F193F5FA300765366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A17D77193F5FA300765366 /* AppDelegate.m in Sources */,
+				40A17D9B193F602000765366 /* CXTablePullRefresh.m in Sources */,
+				40A17D9E193F604A00765366 /* RootViewController.m in Sources */,
+				40A17D73193F5FA300765366 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		40A17D6F193F5FA300765366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A17D70193F5FA300765366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40A17D88193F5FA400765366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A17D89193F5FA400765366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40A17D8D193F5FA400765366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40A17D8E193F5FA400765366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40A17D90193F5FA400765366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CXTablePullRefreshDemo/CXTablePullRefreshDemo-Prefix.pch";
+				INFOPLIST_FILE = "CXTablePullRefreshDemo/CXTablePullRefreshDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		40A17D91193F5FA400765366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CXTablePullRefreshDemo/CXTablePullRefreshDemo-Prefix.pch";
+				INFOPLIST_FILE = "CXTablePullRefreshDemo/CXTablePullRefreshDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40A17D5E193F5FA300765366 /* Build configuration list for PBXProject "CXTablePullRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A17D8D193F5FA400765366 /* Debug */,
+				40A17D8E193F5FA400765366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A17D8F193F5FA400765366 /* Build configuration list for PBXNativeTarget "CXTablePullRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A17D90193F5FA400765366 /* Debug */,
+				40A17D91193F5FA400765366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40A17D5B193F5FA300765366 /* Project object */;
+}
