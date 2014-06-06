@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define SCREEN_HEIGHE   [UIScreen mainScreen].bounds.size.height
+
 typedef enum{
     CXRefreshNormal = 0,
 	CXRefreshPulling,
