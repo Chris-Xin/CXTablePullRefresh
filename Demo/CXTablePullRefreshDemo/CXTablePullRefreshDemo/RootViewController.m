@@ -28,6 +28,9 @@
     [super viewDidLoad];
 
     _tablePullRefresh = [[CXTablePullRefresh alloc] init];
+//    _tablePullRefresh = [[CXTablePullRefresh alloc] initWithUpArrow:[UIImage imageNamed:@"blackArrow.png"]];
+
+    
     [self.view addSubview:_tablePullRefresh];
 }
 

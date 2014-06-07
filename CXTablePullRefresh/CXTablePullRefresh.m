@@ -12,6 +12,27 @@
 
 - (id)init
 {
+    self = [self initWithStyle:CXRefreshStyleGray];
+    
+    return self;
+}
+
+
+- (id)initWithUpArrow:(UIImage *)image
+{
+    self = [self init];
+    
+    UIImageView *pullImageView = (UIImageView *)[_pullDownView viewWithTag:1];
+    pullImageView.image = image;
+    
+    UIImageView *stopImageView =(UIImageView *)[_stopPullView viewWithTag:1];
+    stopImageView.image = image;
+
+    return self;
+}
+
+- (id)initWithStyle:(CXPullRefreshStyle)style
+{
     self = [super init];
     
     if (self != nil) {
@@ -25,7 +46,16 @@
         //Pull Down View
         _pullDownView = [[UIView alloc] init];
         
-        UIImageView *pullImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grayArrow"]];
+        NSString *imageName = nil;
+        if(style == CXRefreshStyleBlue){
+            imageName = @"blueArrow.png";
+        }else if(style == CXRefreshStyleBlack){
+            imageName = @"blackArrow.png";
+        }else{
+            imageName = @"grayArrow.png";
+        }
+        
+        UIImageView *pullImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
         pullImageView.frame = CGRectMake(120, SCREEN_HEIGHE-50, 15, 30);
         pullImageView.tag = 1;
         [_pullDownView addSubview:pullImageView];
@@ -43,7 +73,7 @@
         //Stop Pull Down View
         _stopPullView = [[UIView alloc] init];
         
-        UIImageView *stopImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grayArrow"]];
+        UIImageView *stopImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
         stopImageView.frame = CGRectMake(120, SCREEN_HEIGHE-50, 15, 30);
         stopImageView.tag = 1;
         stopImageView.transform = CGAffineTransformRotate(stopImageView.transform, M_PI);
@@ -82,18 +112,79 @@
         refreshTime.font = [UIFont systemFontOfSize:10.0f];
         refreshTime.textColor = [UIColor whiteColor];
         refreshTime.backgroundColor = [UIColor clearColor];
-        refreshTime.frame = CGRectMake(160, SCREEN_HEIGHE-35, 0, 0);
+        refreshTime.frame = CGRectMake(160, refreshLable.frame.origin.y+refreshLable.frame.size.height+8, 0, 0);
         [refreshTime sizeToFit];
         refreshTime.tag = 3;
         [_refreshView addSubview:refreshTime];
-
+        
         
         
     }
     return  self;
 }
 
-#pragma mark - Dragging
+#pragma mark - Set Text Font&Color
+- (void)setNoticeFont:(UIFont *)font
+{
+    UILabel *pullLable = (UILabel *)[_pullDownView viewWithTag:2];
+    pullLable.font = font;
+    [pullLable sizeToFit];
+    
+    UILabel *stopLable = (UILabel *)[_stopPullView viewWithTag:2];
+    stopLable.font = font;
+    [pullLable sizeToFit];
+    
+    UILabel *refreshLable = (UILabel *)[_refreshView viewWithTag:2];
+    refreshLable.font = font;
+    [refreshLable sizeToFit];
+}
+
+- (void)setTimeFont:(UIFont *)font
+{
+    UILabel *refreshTime  = (UILabel *)[_refreshView viewWithTag:3];
+    refreshTime.font = font;
+    [refreshTime sizeToFit];
+}
+
+- (void)setNoticeColor:(UIColor *)color
+{
+    UILabel *pullLable = (UILabel *)[_pullDownView viewWithTag:2];
+    pullLable.textColor = color;
+    
+    UILabel *stopLable = (UILabel *)[_stopPullView viewWithTag:2];
+    stopLable.textColor = color;
+    
+    UILabel *refreshLable = (UILabel *)[_refreshView viewWithTag:2];
+    refreshLable.textColor = color;
+}
+
+- (void)setTimeColor:(UIColor *)color
+{
+    UILabel *refreshTime  = (UILabel *)[_refreshView viewWithTag:3];
+    refreshTime.textColor = color;
+}
+
+#pragma mark - Set Notice Text
+- (void)setPullNoticeText:(NSString *)text
+{
+    UILabel *pullLable = (UILabel *)[_pullDownView viewWithTag:2];
+    pullLable.text = text;
+}
+
+- (void)setReleaseNoticeText:(NSString *)text
+{
+    UILabel *stopLable = (UILabel *)[_stopPullView viewWithTag:2];
+    stopLable.text = text;
+}
+
+- (void)setRefreshNoticeText:(NSString *)text
+{
+    UILabel *refreshLable = (UILabel *)[_refreshView viewWithTag:2];
+    refreshLable.text = text;
+}
+
+
+#pragma mark - Show Refresh
 - (void)CXViewDidScroll:(UIScrollView *)scrollView
 {
     float height = scrollView.contentOffset.y;
@@ -143,7 +234,6 @@
     
 }
 
-#pragma mark - loadData Finish
 - (void)CXLoadDataFinish:(UIScrollView *)scrollView
 {
     [UIView beginAnimations:nil context:nil];

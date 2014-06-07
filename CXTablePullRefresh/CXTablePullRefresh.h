@@ -15,11 +15,17 @@ typedef enum{
 	CXRefreshPulling,
 	CXRefreshStopPulling,
 	CXRefreshLoading,
-} EGOPullRefreshState;
+} CXPullRefreshState;
+
+typedef enum{
+    CXRefreshStyleGray = 0,//default style
+	CXRefreshStyleBlack,
+	CXRefreshStyleBlue,
+} CXPullRefreshStyle;
 
 @interface CXTablePullRefresh : UIView
 {
-    EGOPullRefreshState _states;
+    CXPullRefreshState _states;
     CXTablePullRefresh *delegate;
     
     UIView *_pullDownView;
@@ -29,6 +35,21 @@ typedef enum{
     UIActivityIndicatorView *_activityIndicatorView;
 }
 
+- (id)initWithStyle:(CXPullRefreshStyle)style;
+- (id)initWithUpArrow:(UIImage *)image;
+
+//set Text Font&Color
+- (void)setNoticeFont:(UIFont *)font;
+- (void)setTimeFont:(UIFont *)font;
+- (void)setNoticeColor:(UIColor *)color;
+- (void)setTimeColor:(UIColor *)color;
+
+//set notice text
+- (void)setPullNoticeText:(NSString *)text;
+- (void)setReleaseNoticeText:(NSString *)text;
+- (void)setRefreshNoticeText:(NSString *)text;
+
+//show refresh
 - (void)CXViewDidScroll:(UIScrollView *)scrollView;
 - (void)CXViewDidEndDragging:(UIScrollView *)scrollView;
 - (void)CXLoadDataFinish:(UIScrollView *)scrollView;
