@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4027F1A51943435D00D6736A /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4027F1A11943435D00D6736A /* blackArrow.png */; };
+		4027F1A61943435D00D6736A /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4027F1A21943435D00D6736A /* blackArrow@2x.png */; };
+		4027F1A71943435D00D6736A /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4027F1A31943435D00D6736A /* blueArrow.png */; };
+		4027F1A81943435D00D6736A /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4027F1A41943435D00D6736A /* blueArrow@2x.png */; };
 		40A17D67193F5FA300765366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A17D66193F5FA300765366 /* Foundation.framework */; };
 		40A17D69193F5FA300765366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A17D68193F5FA300765366 /* CoreGraphics.framework */; };
 		40A17D6B193F5FA300765366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A17D6A193F5FA300765366 /* UIKit.framework */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4027F1A11943435D00D6736A /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		4027F1A21943435D00D6736A /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		4027F1A31943435D00D6736A /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		4027F1A41943435D00D6736A /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
 		40A17D63193F5FA300765366 /* CXTablePullRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXTablePullRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A17D66193F5FA300765366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40A17D68193F5FA300765366 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +151,10 @@
 		40A17D9F193F64EE00765366 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4027F1A11943435D00D6736A /* blackArrow.png */,
+				4027F1A21943435D00D6736A /* blackArrow@2x.png */,
+				4027F1A31943435D00D6736A /* blueArrow.png */,
+				4027F1A41943435D00D6736A /* blueArrow@2x.png */,
 				40A17DA0193F64EE00765366 /* grayArrow.png */,
 				40A17DA1193F64EE00765366 /* grayArrow@2x.png */,
 			);
@@ -200,8 +212,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4027F1A81943435D00D6736A /* blueArrow@2x.png in Resources */,
 				40A17DA2193F64EE00765366 /* grayArrow.png in Resources */,
 				40A17D71193F5FA300765366 /* InfoPlist.strings in Resources */,
+				4027F1A61943435D00D6736A /* blackArrow@2x.png in Resources */,
+				4027F1A51943435D00D6736A /* blackArrow.png in Resources */,
+				4027F1A71943435D00D6736A /* blueArrow.png in Resources */,
 				40A17D79193F5FA300765366 /* Images.xcassets in Resources */,
 				40A17DA3193F64EE00765366 /* grayArrow@2x.png in Resources */,
 			);
